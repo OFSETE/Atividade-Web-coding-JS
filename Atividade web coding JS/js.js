@@ -21,7 +21,7 @@ function efetuarDesconto(produto) {
         return;
     }
     
-    if (produto.parcelas === 1) {
+    if (produto.parcelas <= 1) {
         const valorComDesconto = produto.valor * 0.95;
         console.log(`Valor à vista é R$ ${valorComDesconto}`); 
     } else if (produto.parcelas <= 10) {
